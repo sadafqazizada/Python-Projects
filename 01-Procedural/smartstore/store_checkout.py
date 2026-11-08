@@ -35,3 +35,10 @@ else:
 
     need = final_total - money
     print("Need: ", need, "AFN")
+
+print("--------RECEIPT--------")
+print("Product : ", product)
+print("Quantity : ", quantity)
+print("Subtotal: ", subtotal, "AFN")
+print("Discount: ", discount, "AFN")
+print("final total: ", final_total, "AFN")
