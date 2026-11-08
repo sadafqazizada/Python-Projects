@@ -22,3 +22,16 @@ if subtotal > 300 and member == "yes":
     discount = subtotal * 0.10
 
 final_total = subtotal - discount
+
+money = float(input("How much money do you have?"))
+if money >= final_total:
+    print("Purchase successful!")
+
+    remaining = money - final_total
+    print("Remaining money: ", remaining, "AFN")
+
+else:
+    print("Purchase unsuccessful!")
+
+    need = final_total - money
+    print("Need: ", need, "AFN")
