@@ -15,3 +15,10 @@ elif product == 3:
 
 quantity = int(input("What quantity do you want?"))
 subtotal = quantity * price
+
+member = input("Are you a member (yes/no?): ")
+discount = 0
+if subtotal > 300 and member == "yes":
+    discount = subtotal * 0.10
+
+final_total = subtotal - discount
